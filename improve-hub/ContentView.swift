@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        HStack(spacing: 0) {
+          SplitView()
+          MainView()
+        }
     }
 }
 
@@ -18,5 +20,23 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct SplitView: View {
+    var dataArray = ["Training", "Computer Science", "Apple"]
+    var body: some View {
+        List {
+            // TODO - read about \. and read remember about forEach Id
+            ForEach(dataArray, id: \.self, content: { element in
+                Text("\(element)")
+            })
+        }.frame(width: 150)
+    }
+}
+
+struct MainView: View {
+    var body: some View {
+        Color.red
     }
 }

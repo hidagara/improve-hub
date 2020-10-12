@@ -50,6 +50,7 @@
 		9F2216772534D039001248F1 /* improve-hubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "improve-hubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F22167B2534D039001248F1 /* improve_hubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = improve_hubUITests.swift; sourceTree = "<group>"; };
 		9F22167D2534D039001248F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F22168C2534D05A001248F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,9 @@
 		9F2216562534D036001248F1 /* improve-hub */ = {
 			isa = PBXGroup;
 			children = (
+				9F2216922534D292001248F1 /* AppLayer */,
+				9F2216912534D28A001248F1 /* DataLayer */,
+				9F2216902534D284001248F1 /* UILayer */,
 				9F2216572534D036001248F1 /* AppDelegate.swift */,
 				9F2216592534D036001248F1 /* ContentView.swift */,
 				9F22165E2534D039001248F1 /* Assets.xcassets */,
@@ -108,6 +112,7 @@
 				9F2216672534D039001248F1 /* improve_hub.entitlements */,
 				9F22165B2534D036001248F1 /* improve_hub.xcdatamodeld */,
 				9F2216602534D039001248F1 /* Preview Content */,
+				9F22168C2534D05A001248F1 /* README.md */,
 			);
 			path = "improve-hub";
 			sourceTree = "<group>";
@@ -136,6 +141,27 @@
 				9F22167D2534D039001248F1 /* Info.plist */,
 			);
 			path = "improve-hubUITests";
+			sourceTree = "<group>";
+		};
+		9F2216902534D284001248F1 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		9F2216912534D28A001248F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		9F2216922534D292001248F1 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
